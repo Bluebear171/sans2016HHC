@@ -10,7 +10,7 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 5. Part 3: A Fresh-Baked Holiday Pi
 6. Part 4: My Gosh... It's Full of Holes
 7. Part 5: Discombobulated Audio
-8.Appendex
+8. Appendex
   A:Character Dialog History
   B:Achievement
   C:Oraganised Answer
