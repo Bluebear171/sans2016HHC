@@ -11,6 +11,6 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 6. Part 4: My Gosh... It's Full of Holes
 7. Part 5: Discombobulated Audio
 8. Appendex
-  8.1 Character Dialog History
-  8.2 Achievement
-  8.3 Oraganised Answer
+  -8.1 Character Dialog History
+  -8.2 Achievement
+  -8.3 Oraganised Answer
