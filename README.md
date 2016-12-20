@@ -25,4 +25,4 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 - Ed Skoudis
 - Joshua Wright
 
-在這裡感謝他們設計的挑戰讓我學到新的Forensic知識。
+在這裡感謝他們設計的挑戰讓我學到新的Forensic知識。想進入遊戲挑戰自己的人可以按[這裡](https://quest2016.holidayhackchallenge.com/)
