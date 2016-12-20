@@ -29,6 +29,6 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 
 ### Part 1:A Most Curious Business Card
 
-
+[![venue1.jpg](https://s29.postimg.org/88tfwhkjr/venue1.jpg)](https://postimg.org/image/6h0h1l16r/)
 
 遊戲一開始你就會在聖誕老人不見了的案發現場。在和喬斯和傑西卡對話後，你知道你需要調查那張留在現場神秘的卡片。Josh 
