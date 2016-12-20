@@ -31,4 +31,10 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 
 [![venue1.jpg](https://s29.postimg.org/88tfwhkjr/venue1.jpg)](https://postimg.org/image/6h0h1l16r/)
 
-遊戲一開始你就會在聖誕老人不見了的案發現場。在和喬斯和傑西卡對話後，你知道你需要調查那張留在現場神秘的卡片。Josh 
+遊戲一開始你就會身處在聖誕老人不見了的案發現場。在和喬斯和傑西卡對話後，你知道你需要調查那張留在現場神秘的卡片。這張卡片留下了聖誕老人的Twitter戶口以及Instagram戶口。
+
+[![santawclaus_shadow.png](https://s29.postimg.org/69cik10ef/santawclaus_shadow.png)](https://postimg.org/image/44s5ixyrn/)
+
+仔細調查後，你可以發現到聖誕老人的Tweet信息隱藏着其他信息。如果想快速獲取聖誕老人留下的所以信息你可以用tweet_dumper.py，一次過將所有對話save成CSV文件。當你成功把所有對話都整齊排列好你會看到所有的信息會組成一個很大而且明顯的信息，那就是:BUGBOUNTY.
+
+[![bugbunty.jpg](https://s23.postimg.org/xsrti039n/bugbunty.jpg)](https://postimg.org/image/ik1w489l3/)
