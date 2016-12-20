@@ -14,3 +14,5 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
   - 8.1 Character Dialog History
   - 8.2 Achievement
   - 8.3 Oraganised Answer
+
+### Introduction
