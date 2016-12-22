@@ -53,7 +53,7 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 接下來的故事發展，你會通過一個禮物袋來到一個冰天雪地的地方。沒錯，這裡就是聖誕老人和他的精靈居住的地方，北極。這時候你會見到Holly Evergreen。他會告訴你以下幾件事情：
 - 在你去攻擊任何一個系統之前，請先去拜訪Oracle。
 - Santagram 是聖誕老人和他的精靈所使用的社交媒體，想知道更多可以去拜訪在北極的其他精靈哦。
-- 找齊所有啟動Cranberry Pi的零件，找齊後他會給你Cranbian image，並且希望你能幫他找到Login的密碼。[Part 3 會繼續這個部分]
+- 找齊所有啟動Cranberry Pi的零件，找齊後他會給你Cranbian image，並且希望你能幫他找到Login的密碼。[詳細資料請參考Part 3]
 
 零件的所在地:[以後補充]
 - Cranberry Pi Board
@@ -69,3 +69,9 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 - APK File 是用Java程式語言來寫，想找回原本的Coding，要用Android Studio 或者JadX 來Decompile那個APK File。
 - Jadx commandline可以將APK file Decompile成每一個獨立的Java文件。
 - Joshua在2016Hack Fest呈現的[簡報](https://goo.gl/m076lb)裡面也有提及如何更有效的使用Android Studio and JadX來分析Apk文件。
+
+得到這些有用的情報後，你可以開始分析你得到的Apk文件了。正當你Unzip的時候發覺你需要輸入密碼才能繼續你的分析，不然你就無法繼續下去。其實，我在解題的時候在這裡卡了很久的一段時間，直到我在Reddit那邊見到有一個人給予的提示：你可能已經一早獲得了Unzip Santagram的密碼，只是你自己沒察覺到而已。我腦中醒起會不會是之前的BUGBOUNTY。最後，皇天不負有心人，我成功找到密碼(bugbounty)啦。進入分析Apk的階段，你可以用JadX 去Decompile 你得到的Apk文件，一旦Jadx成功Decompile後，你就能找題目要求你的username and password。使用Text Search功能你可以找到username and password 都隱藏在Code裡面。
+
+`jSONObject.put("username", "guest");
+ jSONObject.put("password", "busyreindeer78");
+`
