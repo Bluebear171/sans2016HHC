@@ -75,3 +75,4 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 `jSONObject.put("username", "guest");
  jSONObject.put("password", "busyreindeer78");
 `
+另外，題目要求的Audio Component你可以在res/raw裡面找到，文件名稱為：discombobulatedaudio1.mp3 如果想要該Mp3文件，可以到這裡下載
