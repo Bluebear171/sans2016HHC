@@ -53,11 +53,19 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 接下來的故事發展，你會通過一個禮物袋來到一個冰天雪地的地方。沒錯，這裡就是聖誕老人和他的精靈居住的地方，北極。這時候你會見到Holly Evergreen。他會告訴你以下幾件事情：
 - 在你去攻擊任何一個系統之前，請先去拜訪Oracle。
 - Santagram 是聖誕老人和他的精靈所使用的社交媒體，想知道更多可以去拜訪在北極的其他精靈哦。
-- 找齊所有啟動Cranberry Pi的零件，找齊後他會給你Cranbian image，並且希望你能幫他找到Login的密碼。
+- 找齊所有啟動Cranberry Pi的零件，找齊後他會給你Cranbian image，並且希望你能幫他找到Login的密碼。[Part 3 會繼續這個部分]
 
-零件的所在地:
+零件的所在地:[以後補充]
 - Cranberry Pi Board
 - Power Cord
 - HDMI Cable
 - SD Card
 - Heat Sink
+
+[![Shinny Uptree.jpg](https://s23.postimg.org/7zo277wor/Shinny_Uptree.jpg)](https://postimg.org/image/7mwo11eev/)
+
+為了找回失踪的聖誕老人，你必須想辦法去知道Santagram_4.2.apk 這個文件裡面到底隱藏了什麼信息。在北極尋找了一段時間後，你可以在聖誕老人工作室的火車站找到Shinny Upatree。他會告訴你怎樣去分析你找到的APK文件。從他口中你明白到了以下的事情：
+- APK File 也是Zip File的一種你可以Unzip來取得裡面的所有文件。
+- APK File 是用Java程式語言來寫，想找回原本的Coding，要用Android Studio 或者JadX 來Decompile那個APK File。
+- Jadx commandline可以將APK file Decompile成每一個獨立的Java文件。
+- Joshua在2016Hack Fest呈現的[簡報](https://goo.gl/m076lb)裡面也有提及如何更有效的使用Android Studio and JadX來分析Apk文件。
