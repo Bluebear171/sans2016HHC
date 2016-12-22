@@ -48,3 +48,15 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 憑著這兩個提示你可以聯想到的是Zip File的位置可能就是:http://www.northpolewonderland.com/SantaGram_v4.2.zip 。經過嘗試後你就會成功下載到那個Zip File。裡面有一個SantaGram_4.2.apk的文件。
 
 ### Part 2:Awesome Package Konveyance
+[![Holly.jpg](https://s24.postimg.org/t3kwc4rad/Holly.jpg)](https://postimg.org/image/fzfbzfz8h/)
+接下來的故事發展，你會通過一個禮物袋來到一個冰天雪地的地方。沒錯，這裡就是聖誕老人和他的精靈居住的地方，北極。這時候你會見到Holly Evergreen。他會告訴你以下幾件事情：
+- 在你去攻擊任何一個系統之前，請先去拜訪Oracle。
+- Santagram 是聖誕老人和他的精靈所使用的社交媒體，想知道更多可以去拜訪在北極的其他精靈哦。
+- 找齊所有啟動Cranberry Pi的零件，找齊後他會給你Cranbian image，並且希望你能幫他找到Login的密碼。
+
+零件的所在地:
+- Cranberry Pi Board
+- Power Cord
+- HDMI Cable
+- SD Card
+- Heat Sink
