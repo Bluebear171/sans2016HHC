@@ -36,6 +36,8 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 [![santawclaus_shadow.png](https://s29.postimg.org/69cik10ef/santawclaus_shadow.png)](https://postimg.org/image/44s5ixyrn/)
 
 仔細調查後，你可以發現到聖誕老人的Tweet隱藏着其他信息。如果想快速獲取聖誕老人留下的所以信息你可以用tweet_dumper.py，一次過將所有對話save成CSV文件。當你成功把所有對話都整齊排列好你會看到所有的信息會組成一個很大而且明顯的信息，那就是:BUGBOUNTY。
+
+你也可以在http://twlets.com/ 這個網站直接將自己或他人Twitter的信息變成CSV文件。
 [![bugbunty.jpg](https://s23.postimg.org/xsrti039n/bugbunty.jpg)](https://postimg.org/image/ik1w489l3/)
 
 接著你可以查看聖誕老人的Instagram，在第一張照片找到了2個Zip File的提示。
