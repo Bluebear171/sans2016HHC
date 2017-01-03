@@ -72,6 +72,8 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 
 得到這些有用的情報後，你可以開始分析你得到的Apk文件了。正當你Unzip的時候發覺你需要輸入密碼才能繼續你的分析，不然你就無法繼續下去。其實，我在解題的時候在這裡卡了很久的一段時間，直到我在Reddit那邊見到有一個人給予的提示：你可能已經一早獲得了Unzip Santagram的密碼，只是你自己沒察覺到而已。我腦中醒起會不會是之前的BUGBOUNTY。最後，皇天不負有心人，我成功找到密碼(bugbounty)啦。進入分析Apk的階段，你可以用JadX 去Decompile 你得到的Apk文件，一旦Jadx成功Decompile後，你就能找題目要求你的username and password。使用Text Search功能你可以找到username and password 都隱藏在Code裡面。這段Code你可以在northpolewonderlad.santagram.SplashScreen Class裡面找到。
 
+[![userpass.jpg](https://s28.postimg.org/4gi5nv3gt/userpass.jpg)](https://postimg.org/image/dbizyds95/)
+
 `jSONObject.put("username", "guest");
  jSONObject.put("password", "busyreindeer78");
 `
