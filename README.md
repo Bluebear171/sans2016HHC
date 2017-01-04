@@ -102,3 +102,6 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 
 要找會原來的值(密碼)，你需要將Hash值還原回原本的文字。在Kali Linux裡面John the ripper是一個非常優秀的密碼破解工具。為了減輕破解密碼的難度，住在Small Tree house的Minty Candycane給了你最有用的提示，用Rockyou.txt來配合Crack的過程。使用方法是，在Linux Shell裡面打`john --wordlist=rockyou.lst mnt/etc/shadow`就會開始進行Password Cracking。破解後的密碼是yummycookies。
 [![cracked.jpg](https://s23.postimg.org/4sgnepyxn/cracked.jpg)](https://postimg.org/image/rtx8kgyl3/)
+
+然後把你得到的密碼告訴Holly Evergreen，他就會Unlock Cranbian Pi的Account讓你使用。
+[![cpi.jpg](https://s27.postimg.org/t16jh940z/cpi.jpg)](https://postimg.org/image/sbnr4w3hb/)
