@@ -85,3 +85,8 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 `unzip Santagram_4.2.apk`
 
 如果想要該Mp3文件，可以到這裡[下載](https://drive.google.com/open?id=0B18u7ECQO-gTLTUteDQ4ZDZsdkk)
+
+### Part 3: A Fresh-Baked Holiday Pi
+在解決了apk的文件後，你終於可以靜下心來研究一下你剛剛得到的Cranbian image。要知道怎樣使用這個Image你可以找在聖誕樹下的Wunhorse Openslae來詢問。從他口中你明白到了以下的事情：
+- Cranbian 其實是Linux Based的File System Image。
+- Eskoudis 的部落格會教你[如何Mount a Raspberry Pi File System Image](https://pen-testing.sans.org/blog/2016/12/07/mount-a-raspberry-pi-file-system-image)
