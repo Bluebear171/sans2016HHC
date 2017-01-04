@@ -96,3 +96,6 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 - Step 2:由於mount command需要用到Offset，所以你要計算出Offset的總值得。這個Image的offset=512×137216=70254592
 - Step 3:打`mount -v -o offset=70254592 -t ext4 cranbian-jessie.img mnt/` 你就能成功Mount Cranbian Image。這個Mount Command裡面的 -v 是verbose, 會顯示更多正在Run着的Command的資訊。-o options列出還要使用的Option。 -t = type System file的種類， 而最後的/mnt是我自己設定的Mount Point.你可以用mkdir來建立一個你要的Mount point。
 [![Mountimg.jpg](https://s28.postimg.org/6o0gdt80t/Mountimg.jpg)](https://postimg.org/image/83212j93t/)
+
+根據題目要求，你需要找出Cranpi account的Password。一般來說，Linux存儲密碼的位置會放在`/etc/shadow`File裡面。而這些密碼都會用某些演算法進行加密再被存儲到這個位置。用`cat mnt/etc/shadow`,會得到Cranpi account密碼被hashing後的value。要找會原來的值(密碼)，你需要將Hash值還原回原本的文字。
+[![shadow.jpg](https://s30.postimg.org/c0yurwpup/shadow.jpg)](https://postimg.org/image/tr0jcy3fh/)
