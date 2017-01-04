@@ -90,3 +90,9 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 在解決了apk的文件後，你終於可以靜下心來研究一下你剛剛得到的Cranbian image。要知道怎樣使用這個Image你可以找在聖誕樹下的Wunhorse Openslae來詢問。從他口中你明白到了以下的事情：
 - Cranbian 其實是Linux Based的File System Image。
 - Eskoudis 的部落格會教你[如何Mount a Raspberry Pi File System Image](https://pen-testing.sans.org/blog/2016/12/07/mount-a-raspberry-pi-file-system-image)
+
+當你Unzip disk image後，你可以按照以下步驟來打開Cranbian image。
+- Step 1:用`fdisk -l cranbian-jessie.img`command你可以得知這個Image由2個部分組成。而你要找的資料是在第二個部分裡面。你也會知道開始的Sectors會是137216。
+- Step 2:由於mount command需要用到Offset，所以你要計算出Offset的總值得。這個Image的offset=512×137216=70254592
+- Step 3:打`mount -v -o offset=70254592 -t ext4 cranbian-jessie.img mnt/` 你就能成功Mount Cranbian Image.
+  
