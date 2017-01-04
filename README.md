@@ -94,5 +94,4 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 當你Unzip disk image後，你可以按照以下步驟來打開Cranbian image。
 - Step 1:用`fdisk -l cranbian-jessie.img`command你可以得知這個Image由2個部分組成。而你要找的資料是在第二個部分裡面。你也會知道開始的Sectors會是137216。
 - Step 2:由於mount command需要用到Offset，所以你要計算出Offset的總值得。這個Image的offset=512×137216=70254592
-- Step 3:打`mount -v -o offset=70254592 -t ext4 cranbian-jessie.img mnt/` 你就能成功Mount Cranbian Image.
-  
+- Step 3:打`mount -v -o offset=70254592 -t ext4 cranbian-jessie.img mnt/` 你就能成功Mount Cranbian Image。這個Mount Command裡面的 -v 是verbose, 會顯示更多正在Run着的Command的資訊。-o options列出還要使用的Option。 -t = type System file的種類， 而最後的/mnt是我自己設定的Mount Point.你可以用mkdir來建立一個你要的Mount point。
