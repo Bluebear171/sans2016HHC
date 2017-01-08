@@ -45,7 +45,10 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 [![Insta.jpg](https://s23.postimg.org/aq25xsut7/Insta.jpg)](https://postimg.org/image/lpnd9el87/)
 
 - 提示1：電腦上出現了Zip file的名字：SantaGram_v4.2.zip
+[![instagram_p1.png](https://s30.postimg.org/g3duylzrl/instagram_p1.png)](https://postimg.org/image/53snn09cd/)
+
 - 提示2：紙張上有這個網站http://www.northpolewonderland.com/
+[![instagram_p2.png](https://s23.postimg.org/j130t7gzf/instagram_p2.png)](https://postimg.org/image/8r0ltyr3r/)
 
 憑著這兩個提示你可以聯想到的是Zip File的位置可能就是:http://www.northpolewonderland.com/SantaGram_v4.2.zip 。經過嘗試後你就會成功下載到那個Zip File。裡面有一個SantaGram_4.2.apk的文件。
 
@@ -92,7 +95,7 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 - Eskoudis 的部落格會教你[如何Mount a Raspberry Pi File System Image](https://pen-testing.sans.org/blog/2016/12/07/mount-a-raspberry-pi-file-system-image)
 
 當你Unzip disk image後，你可以按照以下步驟來打開Cranbian image。
-- Step 1:用`fdisk -l cranbian-jessie.img`command你可以得知這個Image由2個部分組成。而你要找的資料是在第二個部分裡面。你也會知道開始的Sectors會是137216。
+- Step 1:用`fdisk -l cranbian-jessie.img`command你可以得知這個Image由2個部分組成。而你要找的資料是在第二個部分裡面。你也會知道開始的Sectors會是137216。 
 - Step 2:由於mount command需要用到Offset，所以你要計算出Offset的總值得。這個Image的offset=512×137216=70254592
 - Step 3:打`mount -v -o offset=70254592 -t ext4 cranbian-jessie.img mnt/` 你就能成功Mount Cranbian Image。這個Mount Command裡面的 -v 是verbose, 會顯示更多正在Run着的Command的資訊。-o options列出還要使用的Option。 -t = type System file的種類， 而最後的/mnt是我自己設定的Mount Point.你可以用mkdir來建立一個你要的Mount point。
 [![Mountimg.jpg](https://s28.postimg.org/6o0gdt80t/Mountimg.jpg)](https://postimg.org/image/83212j93t/)
@@ -105,3 +108,10 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 
 然後把你得到的密碼告訴Holly Evergreen，他就會Unlock Cranbian Pi的Account讓你使用。
 [![cpi.jpg](https://s27.postimg.org/t16jh940z/cpi.jpg)](https://postimg.org/image/sbnr4w3hb/)
+
+現在你可以用Cranbian Pi去啟動遊戲裡面每個Terminal了。
+
+當你找到Terminal後，會見到旁邊有一個被密碼上鎖的門。你需要好好利用Terminal裡面的資訊來找到門的密碼。
+
+- Door 1 - Elf House #2
+[![Elf House2Front.jpg](https://s24.postimg.org/hq02dcuol/Elf_House2_Front.jpg)](https://postimg.org/image/6qev1r49d/)
