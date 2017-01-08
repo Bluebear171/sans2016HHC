@@ -114,4 +114,4 @@ This is the writeup on how I solve the 2016 SANS Holiday Hack Challege
 當你找到Terminal後，會見到旁邊有一個被密碼上鎖的門。你需要好好利用Terminal裡面的資訊來找到門的密碼。
 
 - Door 1 - Elf House #2
-[![Elf House2Front.jpg](https://s24.postimg.org/hq02dcuol/Elf_House2_Front.jpg)](https://postimg.org/image/6qev1r49d/)
+
